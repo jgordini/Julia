@@ -14,5 +14,14 @@ ex7 = diff(5ℯ^y, y, 3)
 eq5 = ex4(x => 0)
 expr = (y + x * y + 5ℯ^y)
 expa = (2 * (x^2 + y^2)^2) - (81 * (x^2 - y^2))
+expb = (2 * (x^2 + y^2)^2)
+expc = (81 * (x^2 - y^2))
+
 diff(expa, x, y)
+
+diff(expb, x, y)
+
+diff(expc, x, y)
 solve(expa, x, y)
+dj = (-8x^3 - 8x * y^2 + 162x) / (8x^2 + 8y^3 + 162y)
+factor(dj, x, y)

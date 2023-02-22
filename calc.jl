@@ -9,4 +9,8 @@ function dy_dx(eqn)
 end
 ex4 = dy_dx(dy_dx(x * y + 5ℯ^y))
 ex6 = diff(diff(5ℯ^y))
+ex9 = diff(5ℯ^y)
+ex7 = diff(5ℯ^y, y, 3)
 eq5 = ex4(x => 0)
+expr = (y + x * y + 5ℯ^y)
+diff(expr, x, x, y, y)

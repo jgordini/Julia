@@ -8,4 +8,5 @@ function dy_dx(eqn)
     eqn2(u(x) => y)
 end
 ex4 = dy_dx(dy_dx(x * y + 5ℯ^y))
-eq5 = ex4(y => 1, x => 0)
+ex6 = diff(diff(5ℯ^y))
+eq5 = ex4(x => 0)
